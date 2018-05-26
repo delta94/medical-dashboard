@@ -1,12 +1,14 @@
 import styled from 'styled-components'
+
 import Logo from 'react-icons/lib/fa/google'
+import Home from 'react-icons/lib/fa/home'
 import Dashboard from 'react-icons/lib/md/dashboard'
-import People from 'react-icons/lib/md/people'
-import Settings from 'react-icons/lib/fa/bars'
-import Notifications from 'react-icons/lib/md/notifications'
 import Calenadar from 'react-icons/lib/fa/calendar'
 import Plans from 'react-icons/lib/fa/table'
+import People from 'react-icons/lib/md/people'
 import Doctor from 'react-icons/lib/fa/user-md'
+import Notifications from 'react-icons/lib/md/notifications'
+import Settings from 'react-icons/lib/fa/bars'
 
 const gray = '#dbdbdb'
 
@@ -49,6 +51,11 @@ export const NavItem = styled.div`
     &:hover {
         background-color: #f7f7f7;
     }
+`
+export const HomeIcon = styled(Home)`
+    padding-right: 10px;
+    font-size: 28px;
+    color: ${props => (props.active ? '#51ddd3' : '#dbdbdb')};
 `
 export const DashboardIcon = styled(Dashboard)`
     padding-right: 10px;

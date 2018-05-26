@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 import {
     Container,
     NavItem,
@@ -11,13 +12,19 @@ import {
     NotificationsIcon,
     CalendarIcon,
     PlansIcon,
-    DoctorIcon
+    DoctorIcon,
+    HomeIcon
 } from './style'
 
-const Navbar = () => (
+const Navbar = ({ history }) => (
     <Container>
         <Left>
             <LogoIcon />
+
+            <NavItem onClick={() => history.push('/')}>
+                <HomeIcon /> Home
+            </NavItem>
+
             <NavItem>
                 <DashboardIcon /> Dashboard
             </NavItem>
@@ -30,10 +37,9 @@ const Navbar = () => (
                 <PlansIcon /> Plans
             </NavItem>
 
-            <NavItem>
+            <NavItem onClick={() => history.push('/patients')}>
                 <PeopleIcon /> Patients
             </NavItem>
-
             <NavItem>
                 <DoctorIcon /> Doctors
             </NavItem>
@@ -47,4 +53,4 @@ const Navbar = () => (
     </Container>
 )
 
-export default Navbar
+export default withRouter(Navbar)
