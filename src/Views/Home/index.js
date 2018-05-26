@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import Fullscreen from '../../Components/Fullscreen'
 
 class Home extends Component {
     render() {
-        return <h1>Home</h1>
+        return <Fullscreen />
     }
 }
 
