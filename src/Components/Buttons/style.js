@@ -13,6 +13,7 @@ export const StyledButton = styled.div`
     font-size: 14px;
     color: black;
     cursor: pointer;
+    text-decoration: none;
 `
 export const StyledButtonGradient = StyledButton.extend`
     color: white;
