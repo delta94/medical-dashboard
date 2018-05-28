@@ -97,7 +97,7 @@ export const CalendarIcon = styled(Calendar)`
 `
 export const UserIcon = styled(User)`
     margin-right: 10px;
-    color: #dbdbdb;
+    color: #babdc6;
     font-size: 22px;
 `
 export const EditIcon = styled(Edit)`

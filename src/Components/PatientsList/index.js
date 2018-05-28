@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
-import { Scrollbars } from 'react-custom-scrollbars'
 import {
     Container,
     Legend,
