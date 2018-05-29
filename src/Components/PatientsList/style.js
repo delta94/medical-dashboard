@@ -5,20 +5,15 @@ import Calendar from 'react-icons/lib/fa/calendar'
 import User from 'react-icons/lib/fa/user-plus'
 import Edit from 'react-icons/lib/fa/edit'
 
-export const Container = styled.div`
-    margin: 0 auto 0 auto;
-    width: 1500px;
-`
 export const Actions = styled.div`
     width: 100%;
-    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 `
 export const Legend = styled.div`
     width: 100%;
-    height: 60px;
+    height: 80px;
     margin: 40px 0 10px 0;
     display: flex;
     flex-direction: row;
@@ -36,7 +31,9 @@ export const LegendText = styled.p`
     color: #51ddd3;
 `
 export const Overflow = styled.div`
-    overflow: scroll'
+    padding: 10px 0 10px 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 `
 export const Row = styled.div`
     width: 100%;
@@ -79,7 +76,7 @@ export const AbsoluteIcon = styled.div`
     color: #dbdbdb;
 
     &: hover {
-        color: black;
+        color: #51ddd3;
     }
 `
 export const PhoneIcon = styled(Phone)`
