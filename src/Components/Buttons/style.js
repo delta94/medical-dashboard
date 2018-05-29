@@ -16,6 +16,7 @@ export const StyledButton = styled.div`
     text-decoration: none;
 `
 export const StyledButtonGradient = StyledButton.extend`
+    height: 59px;
     color: white;
     border: none;
     background: linear-gradient(to right, #61bef8, #65e5dc);

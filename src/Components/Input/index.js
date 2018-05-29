@@ -5,7 +5,9 @@ const Input = ({ name, onChange }) => (
     <Container>
         <Left>{name}</Left>
         <Right>
-            <TextInput onChange={e => onChange(e.target.value)} />
+            <TextInput
+                onChange={e => (onChange ? onChange(e.target.value) : null)}
+            />
         </Right>
     </Container>
 )
